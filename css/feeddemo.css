@@ -1,0 +1,74 @@
+.ibox{
+	margin-bottom: 10px;
+}
+.wrapper-content {
+	padding: 10px 10px 20px;
+}
+.btn-large-dim-feed{
+	width:150px;
+	height: 60px;
+	font-size: 20px;
+}
+button.dim.date{
+	margin-right: 1px;
+	margin-bottom: 10px !important
+}
+
+.logo{
+	font-size: 30px;
+	color:#1ab394;
+	float: left;
+	height: 50px;
+	padding: 8px 0px 0px 20px;
+	width: 350px;
+}
+.sidebard-panel {
+	width: 230px;
+}
+
+.inmodal .modal-header {
+	padding: 15px;
+	text-align: center;
+}
+
+.agile-detail {
+	font-size: 15px;
+}
+.logo-name{
+	font-size: 120px !important;
+	letter-spacing: -10px !important;
+}
+.modal-lg{
+	width:1200px !important;
+}
+
+td.sm{
+	padding:4px !important;
+	vertical-align: middle !important;
+}
+select.sm{
+	width:60px;
+}
+td.action{
+	width:100px !important;
+}
+.input-sm{
+	text-align: center !important;
+}
+.inmodal table{
+	margin-bottom: 0px !important;
+}
+.trashcan{
+	width: 100% !important;
+}
+.panel-body.trash{
+	padding: 0px !important;
+}
+[draggable] {
+	/* not applied by the directive, but useful to indicate a draggable element */
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: move;
+}

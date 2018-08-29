@@ -1,0 +1,131 @@
+<div ui-view="" class="ng-scope" >
+    <div class="row">
+
+            <div class="col-lg-10">
+                <p>
+                    选择用能单位可以进行管理与配置
+                </p>
+
+                <h3 class="font-bold">用能单位配置</h3>
+
+                <div class="btn-group dropdown" uib-dropdown="">
+                    <button type="button" class="btn btn-success dropdown-toggle" uib-dropdown-toggle=""
+                            aria-haspopup="true" aria-expanded="false">
+                        XXX集团 <span>»</span>
+                    </button>
+                    <ul role="menu" uib-dropdown-menu="" class="dropdown-menu">
+                        <li><a href="">XXX集团</a></li>
+                        <li><a href="">YYY集团</a></li>
+                        <li><a href="">ZZZ集团</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group dropdown" uib-dropdown="">
+                    <button type="button" class="btn btn-warning dropdown-toggle" uib-dropdown-toggle=""
+                            aria-haspopup="true" aria-expanded="false">
+                        XXX工厂 <span>»</span>
+                    </button>
+                    <ul role="menu" uib-dropdown-menu="" class="dropdown-menu">
+                        <li><a href="">XXX工厂</a></li>
+                        <li><a href="">YYY工厂</a></li>
+                        <li><a href="">ZZZ工厂</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group dropdown" uib-dropdown="">
+                    <button type="button" class="btn btn-info dropdown-toggle" uib-dropdown-toggle=""
+                            aria-haspopup="true" aria-expanded="false">
+                        XXX车间 <span>»</span>
+                    </button>
+                    <ul role="menu" uib-dropdown-menu="" class="dropdown-menu">
+                        <li><a href="">XXX车间</a></li>
+                        <li><a href="">YYY车间</a></li>
+                        <li><a href="">ZZZ车间</a></li>
+                    </ul>
+                </div>
+                <a class="w3-btn" href="exercise.asp?filename=exercise_button_groups3" target="_blank"></a>
+                <div class="btn-group dropdown" uib-dropdown="">
+                    <button type="button" class="btn dropdown-toggle" uib-dropdown-toggle="" aria-haspopup="true"
+                            aria-expanded="false">
+                        XXX生产线 <span class="caret"></span>
+                    </button>
+                    <ul role="menu" uib-dropdown-menu="" class="dropdown-menu">
+                        <li><a href="">XXX生产线</a></li>
+                        <li><a href="">YYY生产线</a></li>
+                        <li><a href="">ZZZ生产线</a></li>
+                    </ul>
+                </div>
+        </div>
+
+
+    </div>
+    <div class="wrapper wrapper-content animated fadeIn" ng-controller="notifyCtrl">
+    <div class="row"   >
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>配置集团信息
+                        <small></small>
+                    </h5>
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content">
+                    <form method="get" class="form-horizontal">
+                        <div class="form-group"><label class="col-sm-2 control-label">名称</label>
+
+                            <div class="col-sm-10"><input type="text" class="form-control"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-sm-2 control-label">描述</label>
+
+                            <div class="col-sm-10"><input type="text" class="form-control"> <span
+                                    class="help-block m-b-none">项目的具体描述信息</span>
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-sm-2 control-label">地址</label>
+
+                            <div class="col-sm-10"><input type="password" class="form-control" name="password"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-sm-2 control-label">人数</label>
+
+                            <div class="col-sm-10"><input type="text" placeholder="9999" class="form-control">
+                            </div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-lg-2 control-label">能源管理负责人姓名</label>
+
+                            <div class="col-lg-10"><input type="text"   placeholder="张三..."
+                                                          class="form-control"></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-lg-2 control-label">能源管理负责人Email</label>
+
+                            <div class="col-lg-10"><p class="form-control">email@example.com</p></div>
+                        </div>
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group"><label class="col-sm-2 control-label">能源管理负责人电话 <br/>
+                            <small class="text-navy">Normal Bootstrap elements</small>
+                        </label>
+
+                            <div class="col-sm-10">
+                                <input type="text"   placeholder="+8613800138000..."
+                                       class="form-control"></div>
+                            </div>
+                        <div class="hr-line-dashed"></div>
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-white" type="submit">取消</button>
+                                <button class="btn btn-primary"   ng-click="inspiniaDemo1()"  >保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

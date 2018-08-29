@@ -1,0 +1,193 @@
+<div class="sidebard-panel" >
+    <div>
+        <h4>选择范围</h4>
+        <form role="form" ng-controller="FactoryController">
+            <div class="form-group">
+                <button class="btn btn-info  dim date  btn-outline" type="button">
+                    本年
+                </button>
+                <button class="btn btn-info  dim date  btn-outline" type="button" >
+                    本月
+                </button>
+                <button class="btn btn-info  dim date  btn-outline" type="button" >
+                    本日
+                </button>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="radio radio-info radio-inline">
+                        <input id="radio33" type="radio" name="shijian"  value="option1" checked="">
+                        <label for="radio33">
+                            年
+                        </label>
+                    </div>
+                    <div class="radio radio-info radio-inline">
+                        <input id="radio44" type="radio" name="shijian" value="option2">
+                        <label for="radio44">
+                            月
+                        </label>
+                    </div>
+                    <div class="radio radio-info radio-inline">
+                        <input id="radio55" type="radio" name="shijian"  value="option3">
+                        <label for="radio55">
+                            周
+                        </label>
+                    </div>
+                    <div class="radio radio-info radio-inline">
+                        <input id="radio66" type="radio" name="shijian"  value="option3">
+                        <label for="radio66">
+                            日
+                        </label>
+                    </div>
+                    <div class="radio radio-info radio-inline">
+                        <input id="radio77" type="radio" name="shijian" value="option3">
+                        <label for="radio77">
+                            时
+                        </label>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label>日期</label>
+                <input date-range-picker class="form-control date-picker" type="text" ng-model="daterange" placeholder="请选择日期" />
+            </div>
+
+            <div>
+                <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit">
+                    <strong>执行</strong>
+                </button>
+
+            </div>
+        </form>
+    </div>
+    <div class="m-t-md">
+        <h4>工厂</h4>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="checkbox checkbox-success">
+                    <input id="checkbox1" type="checkbox" checked="">
+                    <label for="checkbox1">JQPT</label>
+                </div>
+                <div class="checkbox checkbox-success">
+                    <input id="checkbox2" type="checkbox" checked="">
+                    <label for="checkbox2">JQPT2</label>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+
+            </div>
+        </div>
+    </div>
+    <div class="m-t-md">
+        <h4>显示方式</h4>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="radio radio-info radio-inline">
+                    <input type="radio" name="radio2" id="radio4" value="option1" checked="">
+                    <label for="radio4">
+                        能耗
+                    </label>
+                </div>
+                <div class="radio radio-info radio-inline">
+                    <input type="radio" name="radio2" id="radio5" value="option2">
+                    <label for="radio5">
+                        费用
+                    </label>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="m-t-md">
+        <h4>比较方式</h4>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="radio radio-info radio-inline">
+                    <input id="radio11" type="radio" name="bijiao"  value="option1" checked="">
+                    <label for="radio11">
+                        趋势
+                    </label>
+                </div>
+                <div class="radio radio-info radio-inline">
+                    <input id="radio21" type="radio" name="bijiao" " value="option2">
+                    <label for="radio21">
+                        同比
+                    </label>
+                </div>
+                <div class="radio radio-info radio-inline">
+                    <input id="radio31" type="radio" name="bijiao" " value="option3">
+                    <label for="radio31">
+                        环比
+                    </label>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="m-t-md">
+        <h4>分析方式</h4>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="radio radio-info">
+                    <input type="radio" name="radio1" id="radio1" value="option1" checked="">
+                    <label for="radio1">
+                        按能耗分类
+                    </label>
+                </div>
+                <div class="radio radio-info">
+                    <input type="radio" name="radio1" id="radio2" value="option2">
+                    <label for="radio2">
+                        按重点设备
+                    </label>
+                </div>
+                <div class="radio radio-info">
+                    <input type="radio" name="radio1" id="radio3" value="option3">
+                    <label for="radio3">
+                        按生产日非生产日
+                    </label>
+                </div>
+                <div class="radio radio-info">
+                    <input type="radio" name="radio1" id="radio3" value="option3">
+                    <label for="radio3">
+                        按能耗设备状态
+                    </label>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="wrapper sidebar-content wrapper-content" ng-controller="FactoryController">
+<div class="row" >
+    <div class="col-lg-12">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">能效对标管理
+
+            </div>
+            <div class="panel-body">
+                <highchart class="chart" config="benchmarkingConfig"></highchart>
+            </div>
+
+        </div>
+
+</div>
+
+</div>
+
+
+</div>

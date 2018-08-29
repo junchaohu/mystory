@@ -1,0 +1,115 @@
+
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="tabs-container">
+
+                <uib-tabset>
+                    <uib-tab heading="简介" >
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="jumbotron col-md-8">
+                                    <h1><span class="text-hide">Gulp.js<span><img class="logo1" src="img/gulp-white-text.svg"></span></span></h1>
+                                    <p class="lead">用自动化构建工具增强你的工作流程！</p>
+
+                                </div>
+                            </div>
+                            
+                            
+                                <!-- Example row of columns -->
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>易于使用</h2>
+                                        <p>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2>构建快速</h2>
+                                        <p>利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>插件高质</h2>
+                                        <p>Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作。</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h2>易于学习</h2>
+                                        <p>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </uib-tab>
+
+
+                    <uib-tab heading="使用指南">
+                        <div class="panel-body" >
+                            <article class="col-md-6 markdown-body" id="docs-content">
+                                <h4>1. 全局安装 gulp：</h4>
+                                <pre><code class="language-sh hljs bash">$ npm install --global gulp
+                                </code></pre>
+                                <h4>2. 作为项目的开发依赖（devDependencies）安装：</h4>
+                                <pre><code class="language-sh hljs bash">$ npm install --save-dev gulp
+                                </code></pre>
+                                <h4>3. 在项目根目录下创建一个名为 <code>gulpfile.js</code> 的文件：</h4>
+                                <pre><code class="language-js hljs javascript"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+                                    gulp.task(<span class="hljs-string">'default'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+                                    <span class="hljs-comment">// 将你的默认的任务代码放在这</span>
+                                });
+                            </code></pre>
+                            <h4>4. 运行 gulp：</h4>
+                            <pre><code class="language-sh hljs bash">$ gulp
+                            </code></pre>
+                            <p>默认的名为 default 的任务（task）将会被运行，在这里，这个任务并未做任何事情。</p>
+                            <p>想要单独执行特定的任务（task），请输入 <code>gulp &lt;task&gt; &lt;othertask&gt;</code>。</p>
+                            <h2>下一步做什么呢？</h2>
+                            <p>你已经安装了所有必要的东西，并且拥有了一个空的 gulpfile。那怎样才算是__真的__入门了呢？可以查看这些 <a href="../recipes/">秘籍</a> 和这个 <a href="../#articles/">文章列表</a> 来学习更多的内容。</p>
+                            <h2>.src, .watch, .dest, CLI 参数 - 我该怎么去用这些东西呢？</h2>
+                            <p>要了解 API 规范文档，请查看 <a href="../api/">API 文档</a>.</p>
+                            <h2>可用的插件</h2>
+                            <p>gulp 开发社区正在快速成长，每天都会有新的插件诞生。在 <a href="http://gulpjs.com/plugins/" target="_blank">主站</a> 上可以查看完整的列表。</p>
+
+                        </article>
+                    </div>
+                </uib-tab>
+
+
+
+
+            </uib-tabset>
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+<style type="text/css">
+    .jumbotron {
+      text-align: center;
+      background-color: #cf4646;
+      color: #fff;
+    }
+    .jumbotron .lead em {
+      display: none;
+    }
+    .jumbotron .logo1 {
+      width: 100%;
+      max-width: 200px;
+    }
+    .jumbotron .btn-getting-started {
+      color: #efbfbf;
+      border: none;
+      box-shadow: inset 0 0 0 2px #efbfbf;
+      border-radius: 2px;
+      background-color: transparent;
+      margin-top: 26px;
+    }
+    .jumbotron .btn-getting-started:hover,
+    .jumbotron .btn-getting-started:active {
+      color: #fff;
+      box-shadow: inset 0 0 0 2px #fff;
+      background-color: transparent;
+    }
+</style>
+
